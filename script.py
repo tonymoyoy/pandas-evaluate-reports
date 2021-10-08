@@ -45,4 +45,7 @@ for index, row in df1.iterrows():
         time_column.append(time_column)
 
 
+# Add columns to the dataframe 1 
+df1.insert(len(df1.columns), "Type", type_column)
+df1.insert(len(df1.columns), "Minutes", time_column)
 
